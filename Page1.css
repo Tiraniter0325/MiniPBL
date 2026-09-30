@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+            scroll-behavior: smooth;
+        }
+
+body{
+    background-color: #e7e2d4;
+    margin: 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-s;
+}
+
+a:hover{
+  opacity: 0.6;
+}
+
+
+.Banner {
+  width: 100%;
+}
+
+.Banner img {
+  width: 100%;
+  height: auto; 
+  display: block;
+}
+
+.nav ul
+{list-style-type: none;
+     padding-left: 0px;
+    }
+
+
+
+.nav li{
+            display: inline-block;
+            width: 300px;
+        }
+
+.nav{
+  background-color: #FFA62B;
+  margin: 0px;
+  padding: 20px;
+  height: auto;
+  font-size: larger;
+
+}
+
+.nav a{
+  color: #16697A;
+  text-decoration: none;
+}
+
+.nav i {
+  font-size: 25px;
+  color: #16697A;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.clearfix::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+.container{
+    width: 80%;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    
+}
+
+.intro{
+    text-align: center;
+      padding: 10px 15px;
+    border: 2px solid #16697A;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.intro p{
+    font-size: larger;
+}
+
+.row{
+    width:100%;
+}
+.col{
+    float: left;
+    width: 50%;
+    padding:40px;
+}
+.col img{
+    margin: 0px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0,24) 0px 3px 8px;
+}
+.col2{
+    padding: 0px 10px;
+}
+
+.Packages h1{
+  background-color: #FFA62B;
+  margin: 0px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+
+.btn-container {
+  text-align: center;
+  margin: 15px 0; 
+}
+
+.buy-btn {
+  display: inline-block;
+  width: 33%;
+  min-width: 200px;
+  background-color: #ffa500;
+  color: #000000;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.buy-btn:hover {
+  background-color: #e69500;
+}
+
+
+
+table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      padding: 10px;
+    }
+
+th:hover{
+  opacity: 0.8;
+}
+td:hover{
+  opacity: 0.8;
+}
+tr:hover{
+  opacity: 0,8;
+}
+
+    
+
+    body{padding:0px; margin:0px;}
+
+        .fa {
+              padding: 10px;
+               font-size: 30px;
+                width:5px;
+               text-align: center;
+              text-decoration: none;
+             margin: 5px 2px;
+             display: inline-block;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+
+
+        
+
+.site-footer {
+  background-color: #16697a;
+  color: #ede7e3;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+
+.footer-col {
+  float: left;
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+.footer-links a {
+  color: #ede7e3;
+  text-decoration: none;
+}
+
+.nav-footer{list-style-type: none;
+        padding-left: 0px;
+        }
+        .nav-footer li{
+            display: inline-block;
+            width: 80px;
+        }
+        .nav-footer a{
+            color: white;
+            text-decoration: none;
+        }
+
+
+.newsletter input {
+  width: 200px;
+  padding: 5px;
+  background-color: #ede7e3;
+  border: 1px solid #82c0cc;
+}
+
+.newsletter button {
+  padding: 5px 10px;
+  background-color: #ffa62b;
+  color: #16697a;
+  border: 1px solid #82c0cc;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.footer-middle {
+  text-align: center;
+}
+
+.logo-box {
+  width: 140px;
+  height: 100px;
+  border: 2px solid #82c0cc;
+  margin: 0 auto 10px auto;
+}
+
+.footer-logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.motto {
+  font-style: italic;
+  color: #82c0cc;
+  margin: 5px 0;
+}
+
+.social-links {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: #EDE7E3;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+
+.footer-group {
+  margin-bottom: 20px;
+}
+
+.footer-group ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.Resources a{
+  color: #ede7e3;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        
+
+        
+
+
+
+

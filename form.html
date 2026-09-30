@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Child Registration Form</title>
+
+    <link rel="icon" type="image/x-icon" href="Media/camp Tropical.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           background: linear-gradient(135deg, #16697A, #489FB5, #82C0CC, #EDE7E3, #FFA62B);
+            margin: 0;
+            padding: 50px 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .form-card {
+            background-color: #82C0CC;
+            max-width: 800px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFA62B;
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        h2 {
+            color: #16697A;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 5px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 8px;
+            color: #16697A;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            border: none;
+            background-color: #EDE7E3;
+            border-radius: 25px;
+            font-size: 14px;
+            box-sizing: border-box;
+            outline: none;
+            color: #333333;
+        }
+
+        input[type="text"]::placeholder,
+        input[type="number"]::placeholder,
+        textarea::placeholder {
+            color: #777777;
+        }
+
+        textarea {
+            height: 120px;
+            border-radius: 20px;
+            resize: vertical;
+        }
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 10px 0;
+            color: #16697A;
+            font-weight: bold;
+        }
+
+        .radio-group label {
+            display: inline;
+            font-weight: normal;
+            margin-bottom: 0;
+            color: #333333;
+        }
+
+        .agreement {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 20px;
+            gap: 12px;
+            font-size: 13px;
+            color: #16697A;
+        }
+
+        .agreement input {
+            width: 18px;
+            height: 18px;
+            margin-top: 2px;
+        }
+
+        .agreement label {
+            font-weight: normal;
+            margin-bottom: 0;
+            color: #333333;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            background-color: #ffa500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        nav a{
+  color: #16697A;
+  text-decoration: none;
+}
+.nav i {
+  font-size: 30px;
+  color: #16697A;
+}
+a:hover{
+    opacity: 0.7;
+}
+
+        
+    </style>
+</head>
+
+<body>
+
+    
+
+    <div class="form-card">
+
+        <h1>Child Registration Form</h1>
+        <p class="subtitle">Please fill in the form below.</p>
+
+        <form>
+            <h2>Guardian Information</h2>
+
+            <div class="grid-container">
+                <div class="full-width">
+                    <label>Guardian(s) Full Name</label>
+                    <input type="text" placeholder="Enter full name" required>
+                </div>
+
+                <div>
+                    <label>Phone Number</label>
+                    <input type="text" placeholder="Enter phone number" required>
+                </div>
+
+                <div>
+                    <label>Secondary Phone Number</label>
+                    <input type="text" placeholder="Enter secondary phone number">
+                </div>
+            </div>
+
+            <h2>Child Information</h2>
+
+            <div class="grid-container">
+                <div>
+                    <label>Child's Full Name</label>
+                    <input type="text" placeholder="Enter child's full name" required>
+                </div>
+
+                <div>
+                    <label>Age of Child</label>
+                    <input type="number" placeholder="Enter child's age" required>
+                </div>
+
+                <div>
+                    <label>Gender of Child</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender"> Male</label>
+                        <label><input type="radio" name="gender"> Female</label>
+                        <label><input type="radio" name="gender"> Other</label>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Package</label>
+                    <select required>
+                        <option>Select a package</option>
+                        <option>Island Explores (Ages 7–10)</option>
+                        <option>Ocean Adventurers (Ages 11–13)</option>
+                        <option>Tropical Navigators (Ages 14–17)</option>
+                    </select>
+                </div>
+
+                <div class="full-width">
+                    <label>Additional Notes</label>
+                    <textarea placeholder="Write any additional notes here"></textarea>
+                </div>
+            </div>
+
+            <div class="agreement">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">By clicking this box, you have agreed to our legally binding terms and policies and accept that you shall pay fees in cash on admission day. Failure to do so will result in exclusion.</label>
+            </div>
+
+            <a href="page1.html"><i class="bi bi-tsunami"></i></a>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
